@@ -44,7 +44,7 @@ public class Enemy : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         GameObject otherGo = collision.gameObject;
-        if (otherGo.GetComponent<ProjectileHero>() != null )
+        if (otherGo.GetComponent<ProjectileHero>() != null)
         {
             Destroy(otherGo);
             Destroy(gameObject);
